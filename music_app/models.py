@@ -1,5 +1,3 @@
-
-from pyexpat import model
 from django.db import models
 from django.contrib.auth.models import User
 
@@ -17,6 +15,7 @@ class Music(models.Model):
         ('KG','Kyrgyzstan'),
         ('KZ', 'Kazakhstan')
     )
+    
     author = models.ManyToManyField(User)
 
     title = models.CharField(max_length=50)

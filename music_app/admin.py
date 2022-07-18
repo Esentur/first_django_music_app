@@ -6,5 +6,6 @@ class MusicAdmin(admin.ModelAdmin):
     list_display = ['title','duration','category']
     list_filter =['category']
     search_fields = ['id']
+    
 admin.site.register(Category)
 admin.site.register(Music,MusicAdmin)
